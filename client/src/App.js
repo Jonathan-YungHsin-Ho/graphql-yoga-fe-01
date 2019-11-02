@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Hello from './components/Hello';
-import Input from './components/Input';
+// import Input from './components/Input';
 
 function App() {
   return (
