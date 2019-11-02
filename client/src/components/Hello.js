@@ -2,9 +2,11 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
+const name = '""';
+
 const HELLO = gql`
   query {
-    hello
+    hello(name: ${name})
   }
 `;
 
@@ -14,7 +16,7 @@ export default function Hello() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>
