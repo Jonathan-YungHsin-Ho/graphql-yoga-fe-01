@@ -6,7 +6,7 @@ import Hello from './components/Hello';
 function App() {
   return (
     <div className='App'>
-      <h1>React App</h1>
+      <h1>React App - Apollo Client</h1>
       <Hello />
     </div>
   );
